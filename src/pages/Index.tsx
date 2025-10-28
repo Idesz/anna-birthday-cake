@@ -40,12 +40,12 @@ const Index = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center gap-12 md:gap-16 max-w-4xl mx-auto">
         {/* Curved text */}
-        <div className="relative w-full max-w-3xl h-32 md:h-40 px-4">
-          <svg viewBox="0 0 800 150" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
+        <div className="relative w-full max-w-4xl h-40 md:h-48 px-4">
+          <svg viewBox="0 0 900 200" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
             <defs>
               <path
                 id="curve"
-                d="M 50,110 Q 400,30 750,110"
+                d="M 50,150 Q 450,20 850,150"
                 fill="transparent"
               />
               <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -58,8 +58,9 @@ const Index = () => {
               className="font-bold" 
               style={{ 
                 fill: "url(#textGradient)",
-                fontSize: "clamp(32px, 5vw, 56px)",
-                fontWeight: "700"
+                fontSize: "clamp(42px, 6.5vw, 72px)",
+                fontWeight: "800",
+                letterSpacing: "0.02em"
               }}
             >
               <textPath href="#curve" startOffset="50%" textAnchor="middle">
