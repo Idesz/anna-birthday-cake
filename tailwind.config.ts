@@ -103,6 +103,7 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "glow": "glow 2s ease-in-out infinite",
         "confetti": "confetti 3s ease-in-out infinite",
+        "flicker": "flicker 1.5s ease-in-out infinite",
       },
     },
   },
