@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import birthdayCake from "@/assets/birthday-cake.jpg";
+import CakeGraphic from "@/components/CakeGraphic";
 
 const Index = () => {
   const [confetti, setConfetti] = useState<Array<{ id: number; left: string; delay: string; duration: string }>>([]);
@@ -70,15 +70,9 @@ const Index = () => {
           </svg>
         </div>
 
-        {/* Cake image */}
-        <div className="relative animate-float">
-          <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-2xl opacity-30 animate-glow" />
-          <img
-            src={birthdayCake}
-            alt="Születésnapi torta 17 gyertyával"
-            className="relative w-full max-w-2xl h-auto rounded-3xl shadow-2xl"
-            loading="eager"
-          />
+        {/* Cake graphic */}
+        <div className="animate-float w-full max-w-2xl">
+          <CakeGraphic />
         </div>
 
         {/* Decorative elements */}
