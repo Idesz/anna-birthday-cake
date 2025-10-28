@@ -40,12 +40,12 @@ const Index = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center gap-12 md:gap-16 max-w-4xl mx-auto">
         {/* Curved text */}
-        <div className="relative w-full max-w-2xl h-24 md:h-32">
-          <svg viewBox="0 0 500 100" className="w-full h-full">
+        <div className="relative w-full max-w-3xl h-32 md:h-40 px-4">
+          <svg viewBox="0 0 800 150" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
             <defs>
               <path
                 id="curve"
-                d="M 50,80 Q 250,20 450,80"
+                d="M 50,110 Q 400,30 750,110"
                 fill="transparent"
               />
               <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -54,7 +54,14 @@ const Index = () => {
                 <stop offset="100%" style={{ stopColor: "hsl(45, 100%, 65%)" }} />
               </linearGradient>
             </defs>
-            <text className="text-4xl md:text-5xl font-bold fill-current" style={{ fill: "url(#textGradient)" }}>
+            <text 
+              className="font-bold" 
+              style={{ 
+                fill: "url(#textGradient)",
+                fontSize: "clamp(32px, 5vw, 56px)",
+                fontWeight: "700"
+              }}
+            >
               <textPath href="#curve" startOffset="50%" textAnchor="middle">
                 Boldog Születésnapot Anna
               </textPath>
